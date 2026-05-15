@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ctp0akbmis1if"]
+
+[ext_resource type="Texture2D" uid="uid://c7bptdut4heep" path="res://assets/kenney_platformer-art-deluxe/Base pack/Tiles/grass.png" id="1_u88mi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tdhxy"]
+size = Vector2(692, 74)
+
+[node name="BlocoTerra" type="StaticBody2D" unique_id=501827898]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1604345498]
+position = Vector2(-167, 36)
+shape = SubResource("RectangleShape2D_tdhxy")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=86435785]
+position = Vector2(-166, 35)
+scale = Vector2(9.971429, 1)
+texture = ExtResource("1_u88mi")

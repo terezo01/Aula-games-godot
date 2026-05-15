@@ -1,10 +1,15 @@
 [gd_scene format=3 uid="uid://d3ykh8wtv7cwo"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_y32ns"]
-size = Vector2(1646.5, 19)
+[ext_resource type="PackedScene" uid="uid://cu8tb6g7haskd" path="res://player.tscn" id="1_0e48y"]
+[ext_resource type="PackedScene" uid="uid://ctp0akbmis1if" path="res://bloco_terra.tscn" id="1_epypp"]
 
 [node name="Node2D" type="Node2D" unique_id=2131144503]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=302888689]
-position = Vector2(310.25, 8.5)
-shape = SubResource("RectangleShape2D_y32ns")
+[node name="Player" parent="." unique_id=1280960926 instance=ExtResource("1_0e48y")]
+position = Vector2(-893, -55)
+
+[node name="BlocoTerra" parent="." unique_id=501827898 instance=ExtResource("1_epypp")]
+position = Vector2(-446, 12)
+
+[node name="BlocoTerra2" parent="." unique_id=1956915269 instance=ExtResource("1_epypp")]
+position = Vector2(494, 12)
