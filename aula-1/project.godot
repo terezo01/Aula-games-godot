@@ -13,7 +13,6 @@ config_version=5
 config/name="aula-1"
 run/main_scene="uid://2r5v27xgwxg6"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="res://icon.svg"
 
 [input]
 
